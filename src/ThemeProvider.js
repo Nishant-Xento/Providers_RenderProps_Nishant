@@ -15,7 +15,7 @@ const themes = {
 
 export const ThemeContext = React.createContext()
 
-export default class ThemeProvider extends React.Component {
+class ThemeProvider extends React.Component {
   state = {
     theme: 'dark'
   }
@@ -37,3 +37,5 @@ export default class ThemeProvider extends React.Component {
     )
   }
 }
+
+export default ThemeProvider
